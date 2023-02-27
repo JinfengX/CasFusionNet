@@ -2,6 +2,8 @@
 
 # CasFusionNet: A Cascaded Network for Point Cloud Semantic Scene Completion by Dense Feature Fusion
 
+by [Jinfeng Xu](https://jinfengx.github.io/), [Xianzhi Li](https://nini-lxz.github.io/), Yuan Tang, Qiao Yu, Yixue Hao, Long Hu, Min Chen
+
 <a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a>
 <a href="https://pytorchlightning.ai/"><img alt="Lightning" src="https://img.shields.io/badge/-Lightning-792ee5?logo=pytorchlightning&logoColor=white"></a>
 <a href="https://hydra.cc/"><img alt="Config: Hydra" src="https://img.shields.io/badge/Config-Hydra-89b8cd"></a>
@@ -11,7 +13,6 @@
 
 </div>
 
-by [Jinfeng Xu](https://jinfengx.github.io/), [Xianzhi Li](https://nini-lxz.github.io/), Yuan Tang, Qiao Yu, Yixue Hao, Long Hu, Min Chen
 
 <div style="text-align: center;">
     <img style="border-radius: 0.3125em;
