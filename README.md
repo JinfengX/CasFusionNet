@@ -1,4 +1,4 @@
-<div style="text-align:center">
+<div align="center">
 
 # CasFusionNet: A Cascaded Network for Point Cloud Semantic Scene Completion by Dense Feature Fusion
 
@@ -105,7 +105,7 @@ We recommend using docker to build the environment.
 
 ```bash
 # clone project
-git clone --recurse-submodules https://github.com/JinfengX/CasFusionNet
+git clone --recurse-submodules https://github.com/JinfengX/CasFusionNet.git
 cd CasFusionNet
 
 # [optional] create virtual environment
