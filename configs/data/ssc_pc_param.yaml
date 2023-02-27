@@ -1,0 +1,10 @@
+input_ds_num: 4096
+groundtruth_ds_num: 4096
+
+save_options:
+  save_npy:
+    input: true
+    ground_truth: true
+  visualization:
+    input: true
+    ground_truth: true

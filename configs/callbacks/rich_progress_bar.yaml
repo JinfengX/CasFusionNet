@@ -1,0 +1,17 @@
+# https://pytorch-lightning.readthedocs.io/en/latest/api/pytorch_lightning.callbacks.RichProgressBar.html
+
+# Create a progress bar with rich text formatting.
+# Look at the above link for more detailed information.
+rich_progress_bar:
+  _target_: pytorch_lightning.callbacks.RichProgressBar
+#  leave: True
+#  theme:
+#    _target_: pytorch_lightning.callbacks.progress.rich_progress.RichProgressBarTheme
+#    description: "white"
+#    progress_bar: "red"
+#    progress_bar_finished: "green"
+#    progress_bar_pulse: "red"
+#    batch_progress: "white"
+#    time: "white"
+#    processing_speed: "white"
+#    metrics: "white"

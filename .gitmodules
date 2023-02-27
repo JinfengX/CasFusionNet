@@ -1,0 +1,3 @@
+[submodule "src/loss/ChamferDistancePytorch"]
+	path = src/loss/ChamferDistancePytorch
+	url = https://github.com/ThibaultGROUEIX/ChamferDistancePytorch

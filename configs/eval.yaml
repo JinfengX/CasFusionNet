@@ -1,0 +1,24 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - data: nyucad_pc # choose datamodule with `test_dataloader()` for evaluation
+  - model: nyucad_pc
+  - logger: many_loggers
+  - trainer: gpu
+  - paths: default
+  - extras: default
+  - hydra: default
+  # experiment configs allow for version control of specific hyperparameters
+  # e.g. best hyperparameters for given model and datamodule
+  - experiment: null
+
+task_name: eval_${model.dataset}
+
+tags: [ "dev" ]
+
+data:
+  batch_size: 4
+
+# passing checkpoint path is necessary for evaluation
+ckpt_path: null

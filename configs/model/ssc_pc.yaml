@@ -1,0 +1,33 @@
+_target_: src.models.ssc_module.SSCLitModule
+
+net:
+  _target_: src.models.components.cas_fusion_net.CasFusionNet
+  class_num: 16
+  dim_feat: 1024
+  num_p0: 2048
+  radius: 1.2
+  up_factors: [ 1, 2]
+
+loss:
+  _target_: src.loss.ssc_loss.Loss
+  seg_weight: null
+  sqrt: True
+
+optimizer:
+  _target_: torch.optim.Adam
+  _partial_: true
+  lr: 0.001
+  betas: [ 0.9, 0.999 ]
+  eps: 1e-08
+  weight_decay: 1e-4
+
+scheduler:
+  _target_: torch.optim.lr_scheduler.StepLR
+  _partial_: true
+  step_size: 2
+  gamma: 0.99
+  last_epoch: -1
+
+dataset: ssc_pc
+
+class_num: 16

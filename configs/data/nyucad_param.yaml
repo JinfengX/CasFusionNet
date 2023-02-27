@@ -1,0 +1,44 @@
+sampler:
+  name: 'poisson_disk_sampling' # or 'uniform_sampling'
+  pts_number: 81920
+  factor: 3 # only used in 'poisson_disk_sampling'
+
+input_ds_num: 4096
+groundtruth_ds_num: 8192
+
+save_options:
+  save_npy:
+    input: true
+    ground_truth: true
+    rgb: true
+    depth: true
+    input_colored: true
+  visualization:
+    input: true
+    ground_truth: true
+    rgb: true
+    depth: true
+    input_colored: true
+    mesh_colored: true
+
+# prameters from the original dataset
+voxel_unit: 0.02
+height_belowfloor: -0.05
+voxel_size: [ 240,144,240 ]
+
+voxel_size_model: [ 240,240,144 ]
+voxel_size_cam: [ 240,240,240 ]
+cam_k:
+  - - 518.8579
+    - 0
+    - 320
+  - - 0
+    - 518.8597
+    - 240
+  - - 0
+    - 0
+    - 1
+image_size:
+  x: 640
+  y: 480
+voxel_downsample: 4

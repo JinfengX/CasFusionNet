@@ -1,0 +1,36 @@
+class_map:
+  bathtub: 0
+  bed: 1
+  bookshelf: 2
+  cabinet: 3
+  celling: 4
+  chair: 5
+  desk: 6
+  door: 7
+  floor: 8
+  other: 9
+  sink: 10
+  sofa: 11
+  table: 12
+  toilet: 13
+  tv: 14
+  wall: 15
+
+color_map:
+  0: [ 255,128,128 ] # bathtub-0
+  1: [ 255,128,0 ] # bed-1
+  2: [ 128,255,128 ] # bookshelf-2
+  3: [ 255,0,0 ] # cabinet-3
+  4: [ 255,255,255 ] # celling-4
+  5: [ 0,128,255 ] # chair-5
+  6: [ 128,0,0 ] # desk-6
+  7: [ 255,255,0 ] # door-7
+  8: [ 0,128,0 ] # floor-8
+  9: [ 0,0,0 ] # other-9
+  10: [ 128,0,128 ]  # sink-10
+  11: [ 255,0,255 ] # sofa-11
+  12: [ 128,128,255 ] # table-12
+  13: [ 128,128,0 ] # toilet-13
+  14: [ 0,64,128 ] # tv-14
+  15: [ 128,255,255 ] # wall-15
+

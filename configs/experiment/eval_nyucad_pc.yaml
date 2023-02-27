@@ -1,0 +1,30 @@
+# @package _global_
+
+# to execute this experiment run:
+# python eval.py experiment=eval_nyucad_pc
+
+defaults:
+  - override /data: nyucad_pc
+  - override /model: nyucad_pc
+  - override /trainer: gpu
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+tags: ["nyucad_pc", "cas_fusion_net", "eval"]
+
+seed: 555
+
+trainer:
+  devices: [0]
+
+data:
+  batch_size: 4
+  num_workers: 0
+
+logger:
+  wandb:
+    tags: ${tags}
+    group: ${model.dataset}
+
+ckpt_path: ${paths.log_dir}/train_nyucad_pc/runs/2022-08-11_12-33-50/checkpoints/best_model_nyucad.pth
