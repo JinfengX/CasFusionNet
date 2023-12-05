@@ -5,8 +5,14 @@ default_root_dir: ${paths.output_dir}
 min_epochs: 1 # prevents early stopping
 max_epochs: 500
 
-accelerator: cpu
-devices: [2]
+# for cpu
+# accelerator: cpu
+# devices: 8 # number of cpu
+
+# for cpu
+accelerator: gpu
+devices: [0] # selected gpu device 
+
 
 # mixed precision for extra speed-up
 # precision: 16
