@@ -147,7 +147,7 @@ Then, unzip and put them into `data/data_ori/NYUCAD`.
 Run the following command to compile the NYUCAD-PC dataset.
 
 ```bash
-python src/data/nyucad_pc_preprocessing.py
+python src/data/preprocessing/nyucad_pc_preprocessing.py
 ```
 
 #### SSC-PC
@@ -158,7 +158,7 @@ Then, unzip and put them into `data/data_ori`.
 Run the following command to compile the SSC-PC dataset.
 
 ```bash
-python src/data/ssc_pc_preprocessing.py
+python src/data/preprocessing/ssc_pc_preprocessing.py
 ```
 
 ## Training and testing
